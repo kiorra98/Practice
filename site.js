@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const videos = document.querySelectorAll(
-    ".work-project-video, .demo-reel-video"
+    ".work-project-video, .demo-reel-video, .process-video"
   );
 
   if (!("IntersectionObserver" in window)) {
