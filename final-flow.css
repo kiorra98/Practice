@@ -43,6 +43,27 @@
 
 .process-section {
   padding: clamp(24px, 3vw, 42px) 0 clamp(42px, 5vw, 70px);
+  position: relative;
+}
+
+.process-section::before,
+.process-section::after {
+  content: "";
+  width: min(100% - (var(--page) * 2), var(--max));
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+.process-section::before {
+  top: 0;
+}
+
+.process-section::after {
+  bottom: 0;
 }
 
 .process-inner {
@@ -85,19 +106,17 @@
   line-height: 1.46;
 }
 
-.process-media {
+.process-mark {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.process-video {
+.process-mark img {
   display: block;
-  width: min(100%, 360px);
-  max-width: 62%;
+  width: clamp(120px, 12vw, 220px);
   height: auto;
   object-fit: contain;
-  background: transparent;
 }
 
 .contact-section {
@@ -198,13 +217,12 @@
     grid-template-columns: 1fr;
   }
 
-  .process-media {
-    justify-content: flex-start;
+  .process-mark {
+    justify-content: center;
   }
 
-  .process-video {
-    width: min(100%, 300px);
-    max-width: 72%;
+  .process-mark img {
+    width: clamp(110px, 22vw, 160px);
   }
 }
 
@@ -226,8 +244,8 @@
     padding-bottom: 46px;
   }
 
-  .process-video {
-    max-width: 82%;
+  .process-mark img {
+    width: clamp(96px, 32vw, 138px);
   }
 
   .contact-section {
