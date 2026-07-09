@@ -318,7 +318,7 @@ a {
 
 .our-work {
   position: relative;
-  padding: clamp(92px, 13vw, 170px) 0 clamp(84px, 11vw, 150px);
+  padding: clamp(72px, 9vw, 118px) 0 clamp(84px, 11vw, 150px);
   background:
     linear-gradient(180deg, rgba(5, 5, 5, 0.96), rgba(5, 5, 5, 0.86) 24%, rgba(5, 5, 5, 0.98)),
     var(--bg);
@@ -336,36 +336,35 @@ a {
 
 .our-work-intro {
   width: min(100% - (var(--page) * 2), var(--max));
-  margin: 0 auto clamp(56px, 8vw, 104px);
+  margin: 0 auto clamp(48px, 7vw, 88px);
   display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(280px, 0.58fr);
-  gap: clamp(32px, 8vw, 110px);
-  align-items: end;
-}
-
-.work-eyebrow {
-  grid-column: 1 / -1;
-  margin: 0 0 -18px;
-  color: var(--green);
-  font-size: clamp(12px, 1vw, 14px);
-  font-weight: 800;
-  letter-spacing: 2px;
-  line-height: 1.2;
-  text-transform: uppercase;
+  grid-template-columns: minmax(0, 0.62fr) minmax(300px, 0.72fr);
+  gap: clamp(28px, 7vw, 96px);
+  align-items: center;
 }
 
 .our-work-intro h2 {
   margin: 0;
   color: var(--text);
-  font-size: clamp(52px, 8.2vw, 112px);
+  font-size: clamp(36px, 4.8vw, 64px);
   font-weight: 900;
   letter-spacing: 0;
-  line-height: 0.88;
+  line-height: 0.95;
   text-transform: uppercase;
 }
 
 .our-work-copy {
   max-width: 520px;
+}
+
+.work-focus {
+  margin: 0 0 18px;
+  color: var(--green);
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 900;
+  letter-spacing: 1.8px;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 .our-work-copy p {
@@ -528,12 +527,8 @@ a {
     gap: 26px;
   }
 
-  .work-eyebrow {
-    margin-bottom: -8px;
-  }
-
   .our-work-intro h2 {
-    font-size: clamp(46px, 14vw, 74px);
+    font-size: clamp(36px, 11vw, 54px);
   }
 
   .our-work-copy {
