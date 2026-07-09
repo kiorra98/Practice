@@ -13,12 +13,12 @@
 
   <link
     rel="stylesheet"
-    href="styles.css?v=20260709-final-flow"
+    href="styles.css?v=20260709-i18n-compact"
   >
 
   <link
     rel="stylesheet"
-    href="final-flow.css?v=20260709-process-compact"
+    href="final-flow.css?v=20260709-i18n-compact"
   >
 </head>
 
@@ -71,25 +71,29 @@
         class="language-switcher"
         aria-label="Language selector"
       >
-        <a
-          href="https://othalart.com/"
+        <button
+          class="language-button"
+          type="button"
+          data-language="en"
           aria-label="English"
         >
           <img
             src="https://othalart.com/wp-content/uploads/2026/06/bandera-inglesa.webp"
             alt="English"
           >
-        </a>
+        </button>
 
-        <a
-          href="https://othalart.com/es/"
+        <button
+          class="language-button"
+          type="button"
+          data-language="es"
           aria-label="Espanol"
         >
           <img
             src="https://othalart.com/wp-content/uploads/2026/06/bandera-espanola.webp"
             alt="Espanol"
           >
-        </a>
+        </button>
       </div>
 
       <div class="hero-wrap">
@@ -101,23 +105,29 @@
           >
 
           <div class="hero-inner">
-            <h1 class="hero-heading">
+            <h1
+              class="hero-heading"
+              data-i18n="heroHeading"
+            >
               CREATIVE STUDIO
             </h1>
 
-            <p class="hero-primary">
+            <p
+              class="hero-primary"
+              data-i18n="heroPrimary"
+            >
               We shape visual worlds for projects meant to be felt,
               remembered, and made unmistakably unique.
             </p>
 
             <div class="hero-support">
-              <p>
+              <p data-i18n="heroSupport1">
                 From concept to final production, we develop visual worlds
                 that connect with audiences and make every project feel
                 one of a kind.
               </p>
 
-              <p>
+              <p data-i18n="heroSupport2">
                 We create art direction, characters, assets, animation,
                 and digital content for brands, studios, and projects
                 that need a powerful visual identity.
@@ -187,71 +197,31 @@
       aria-labelledby="our-work-title"
     >
       <header class="our-work-intro">
-        <h2 id="our-work-title">
-          <span
-            class="lang-copy"
-            data-lang="en"
-          >
-            OUR WORK
-          </span>
-
-          <span
-            class="lang-copy"
-            data-lang="es"
-            hidden
-          >
-            NUESTRO TRABAJO
-          </span>
+        <h2
+          id="our-work-title"
+          data-i18n="ourWorkTitle"
+        >
+          OUR WORK
         </h2>
 
         <div class="our-work-copy">
           <p
-            class="work-focus lang-copy"
-            data-lang="en"
+            class="work-focus"
+            data-i18n="ourWorkFocus"
           >
             Games · Animation · Visual Development
           </p>
 
-          <p
-            class="work-focus lang-copy"
-            data-lang="es"
-            hidden
-          >
-            Juegos · Animacion · Desarrollo visual
+          <p data-i18n="ourWorkParagraph1">
+            We collaborate with games, animation projects and creative teams
+            to transform ideas into visual worlds, production systems and
+            experiences.
           </p>
 
-          <div
-            class="lang-copy"
-            data-lang="en"
-          >
-            <p>
-              We collaborate with games, animation projects and creative teams
-              to transform ideas into visual worlds, production systems and
-              experiences.
-            </p>
-
-            <p>
-              Every project begins differently. Our work is to understand what
-              it needs to become.
-            </p>
-          </div>
-
-          <div
-            class="lang-copy"
-            data-lang="es"
-            hidden
-          >
-            <p>
-              Colaboramos con juegos, proyectos de animacion y equipos
-              creativos para transformar ideas en mundos visuales, sistemas de
-              produccion y experiencias.
-            </p>
-
-            <p>
-              Cada proyecto comienza de una manera distinta. Nuestro trabajo es
-              entender en que necesita convertirse.
-            </p>
-          </div>
+          <p data-i18n="ourWorkParagraph2">
+            Every project begins differently. Our work is to understand what
+            it needs to become.
+          </p>
         </div>
       </header>
 
@@ -320,8 +290,8 @@
     >
       <div class="animation-showcase-heading">
         <h2 id="animation-showcase-title">
-          ANIMATION THAT BRINGS
-          <span>YOUR IDEAS TO LIFE</span>
+          <span data-i18n="animationTitleWhite">ANIMATION THAT BRINGS</span>
+          <span data-i18n="animationTitleYellow">YOUR IDEAS TO LIFE</span>
         </h2>
       </div>
 
@@ -349,18 +319,18 @@
       <div class="process-inner">
         <div class="process-copy">
           <h2 id="process-title">
-            WHERE DOES THE MAGIC IN
-            <span>OUR WORK HAPPEN?</span>
+            <span data-i18n="processTitleWhite">WHERE DOES THE MAGIC IN</span>
+            <span data-i18n="processTitleYellow">OUR WORK HAPPEN?</span>
           </h2>
 
           <div class="process-text">
-            <p>
+            <p data-i18n="processParagraph1">
               At every stage, we turn the invisible into the visible. With
               structure, ingenuity, and efficiency, ideas are given form.
             </p>
 
-            <p>
-              It makes ideas visible, so they can be understood, valued, and
+            <p data-i18n="processParagraph2">
+              It makes ideas visible — so they can be understood, valued, and
               remembered. We give shape to what does not yet exist.
             </p>
           </div>
@@ -384,11 +354,14 @@
     >
       <div class="contact-inner">
         <div class="contact-copy">
-          <h2 id="contact-title">
+          <h2
+            id="contact-title"
+            data-i18n="contactTitle"
+          >
             LET'S TALK!
           </h2>
 
-          <p>
+          <p data-i18n="contactText">
             Share your idea. We'll shape it from concept to motion.
           </p>
         </div>
@@ -433,7 +406,7 @@
     <span>WhatsApp</span>
   </a>
 
-  <script src="site.js"></script>
+  <script src="site.js?v=20260709-i18n-compact"></script>
 
 </body>
 
