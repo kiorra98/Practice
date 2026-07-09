@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     element.hidden = element.dataset.lang !== activeLang;
   });
 
-  const videos = document.querySelectorAll(".work-project-video");
+  const videos = document.querySelectorAll(
+    ".work-project-video, .demo-reel-video"
+  );
 
   if (!("IntersectionObserver" in window)) {
     videos.forEach((video) => {
